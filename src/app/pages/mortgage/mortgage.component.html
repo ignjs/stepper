@@ -1,0 +1,84 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div id="stepper1" class="bs-stepper">
+                <!--Stepper In Line - Header -->
+                <div class="bs-stepper-header">
+                    <div class="step" data-target="#test-l-1">
+                        <button class="step-trigger">
+                            <span class="bs-stepper-circle">1</span>
+                            <span class="bs-stepper-label">Datos del Credito</span>
+                        </button>
+                    </div>
+                    <div class="line"></div>
+                    <div class="step" data-target="#test-l-2">
+                        <button class="step-trigger">
+                            <span class="bs-stepper-circle">2</span>
+                            <span class="bs-stepper-label">Datos Personales</span>
+                        </button>
+                    </div>
+                    <div class="line"></div>
+                    <div class="step" data-target="#test-l-3">
+                        <button class="step-trigger">
+                            <span class="bs-stepper-circle">3</span>
+                            <span class="bs-stepper-label">Datos Academicos</span>
+                        </button>
+                    </div>
+                    <div class="line"></div>
+                    <div class="step" data-target="#test-l-4">
+                        <button class="step-trigger">
+                            <span class="bs-stepper-circle">4</span>
+                            <span class="bs-stepper-label">Informacion Laboral</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- *********************** -->
+                <div class="bs-stepper-content">
+                    <form (ngSubmit)="onSubmit()">
+                        <div id="test-l-1" class="content col-md-6">
+                            <div class="form-group">
+                                <label for="rutPreev">Rut:</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter email" />
+                            </div>
+                            <div class="form-group">
+                                <label for="montoPreev">Prueba</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="$" />
+                            </div>
+                            <div class="form-group">
+                                <label for="montoPreev">Prueba</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="$" />
+                            </div>
+                            <div class="form-group">
+                                <label for="montoPreev">Prueba</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="$" />
+                            </div>
+                            <div class="form-group">
+                                <label for="montoPreev">Prueba</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="$" />
+                            </div>
+                            <button (click)="next()" class="btn btn-primary sant">Next</button>
+                        </div>
+                        <div id="test-l-2" class="content">
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                            </div>
+                            <button (click)="next()" class="btn btn-primary sant">Next</button>
+                        </div>
+                        <div id="test-l-3" class="content">
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                            </div>
+                            <button (click)="next()" class="btn btn-primary sant">Next</button>
+                        </div>
+                        <div id="test-l-4" class="content text-center">
+                            <button type="submit" class="btn btn-primary mt-5 sant">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  
